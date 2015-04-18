@@ -1,3 +1,8 @@
+/****************************
+ ****************************/
+#ifndef _Si1132_H_
+#define _Si1132_H_
+
 #include "application.h"
 
 /* COMMANDS */
@@ -95,3 +100,4 @@ class FOXFIRE_Si1132 {
 		uint8_t _addr;
 };
 	
+#endif
