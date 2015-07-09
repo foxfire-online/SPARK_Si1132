@@ -7,7 +7,7 @@ FOXFIRE_Si1132::FOXFIRE_Si1132()
 
 boolean FOXFIRE_Si1132::begin(void)
 {
-	Wire.begin();
+	//Wire.begin();
 	reset();
 
 	// enable UVindex measurement coefficients!
