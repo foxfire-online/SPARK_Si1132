@@ -7,7 +7,10 @@ FOXFIRE_Si1132::FOXFIRE_Si1132()
 
 boolean FOXFIRE_Si1132::begin(void)
 {
-	Wire.begin();
+	//Initialize the I2C bus if not already enabled
+	if (!Wire.isEnabled()) {
+		Wire.begin();
+	}
 	reset();
 
 	// enable UVindex measurement coefficients!
